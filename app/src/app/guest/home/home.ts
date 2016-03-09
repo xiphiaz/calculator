@@ -35,8 +35,9 @@ namespace app.guest.home {
 
     class HomeController {
 
-        static $inject = [];
+        public answer:number;
 
+        static $inject = [];
         constructor() {
 
         }

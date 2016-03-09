@@ -4,7 +4,6 @@ namespace common.services {
 
     angular.module(namespace, [
         namespace + '.error',
-        namespace + '.profile',
     ]);
 
 }

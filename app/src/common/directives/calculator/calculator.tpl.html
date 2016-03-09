@@ -1,0 +1,12 @@
+<div class="calculator">
+
+    <div class="input">
+        <span ng-repeat="inputValue in CalculatorController.inputRegister track by $index">{{inputValue}}</span>
+    </div>
+
+    <div class="row" ng-repeat="keyRow in CalculatorController.keys">
+        <button class="key" ng-click="CalculatorController.handleKey(key)" ng-repeat="key in keyRow">{{::key}}</button>
+    </div>
+
+
+</div>
