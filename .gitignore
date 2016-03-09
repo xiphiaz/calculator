@@ -1,0 +1,14 @@
+# Debug logs from gulp
+npm-debug.log.*
+
+# Directory for reports like coverage and test log output
+reports
+
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+
+#Placeholder file for making sure a directory is tracked
+!.gitkeep
+.idea
+coverage

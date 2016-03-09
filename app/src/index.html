@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-strict-di ng-controller="app.root.controller as RootController" class="global-theme">
+<head>
+    <title>Profile Swiper</title>
+    <base href="/"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/assets/favicon.ico"/>
+
+    <!-- compiled CSS -->
+    <% styles.vendor.forEach( function ( file ) { %>
+    <link rel="stylesheet" type="text/css" href="/<%= file %>"/>
+    <% }); %>
+    <% styles.app.forEach( function ( file ) { %>
+    <link rel="stylesheet" type="text/css" href="/<%= file %>"/>
+    <% }); %>
+
+    <!-- compiled JS -->
+    <% scripts.vendor.forEach( function ( file ) { %>
+    <script type="text/javascript" src="/<%= file %>"></script>
+    <% }); %>
+    <% scripts.app.forEach( function ( file ) { %>
+    <script type="text/javascript" src="/<%= file %>"></script>
+    <% }); %>
+
+    <!-- remote stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body layout="column">
+    <div ui-view="app" layout="column" layout-fill></div>
+</body>
+
+</html>
